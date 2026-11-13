@@ -9,15 +9,15 @@ def order_coffee():
 
     option = input("Option: ")
 
-    cafes = {
+    coffees = {
         "1": "Espresso",
         "2": "Latte",
         "3": "Cappuccino",
         "4": "Mocha"
     }
 
-    if option in cafes:
-        chosen_coffee = cafes[option]
+    if option in coffees:
+        chosen_coffee = coffees[option]
         print("\nYour choise is: " + chosen_coffee + ". \nYour coffee is in preparation, please wait...")
 
         with open (PAST_ORDERS, "a", encoding="utf-8") as file:
